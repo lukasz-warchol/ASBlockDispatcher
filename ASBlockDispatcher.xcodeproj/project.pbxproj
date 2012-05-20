@@ -1,0 +1,410 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8634F40D155EA8F700FB2D82 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8634F3D0155EA79700FB2D82 /* UIKit.framework */; };
+		8634F40E155EA8F700FB2D82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8634F3D2155EA79700FB2D82 /* Foundation.framework */; };
+		8634F40F155EA8F700FB2D82 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8634F3D4155EA79700FB2D82 /* CoreGraphics.framework */; };
+		8634F43C155EA97000FB2D82 /* Cedar-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8634F420155EA97000FB2D82 /* Cedar-iOS.framework */; };
+		8634F43D155EA97000FB2D82 /* libExpecta-ios-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8634F436155EA97000FB2D82 /* libExpecta-ios-universal.a */; };
+		8634F43E155EA97000FB2D82 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 8634F437155EA97000FB2D82 /* LICENSE */; };
+		8634F43F155EA97000FB2D82 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8634F43A155EA97000FB2D82 /* README.md */; };
+		8634F440155EA97000FB2D82 /* OCMock-iPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8634F43B155EA97000FB2D82 /* OCMock-iPhone.framework */; };
+		8634F44B155EA9DF00FB2D82 /* ASCurrentQueueBlockDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 8634F444155EA9DF00FB2D82 /* ASCurrentQueueBlockDispatcher.m */; };
+		8634F44C155EA9DF00FB2D82 /* ASGlobalQueueDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 8634F446155EA9DF00FB2D82 /* ASGlobalQueueDispatcher.m */; };
+		8634F44D155EA9DF00FB2D82 /* ASMainQueueBlockDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 8634F448155EA9DF00FB2D82 /* ASMainQueueBlockDispatcher.m */; };
+		8634F44E155EA9DF00FB2D82 /* ASSimpleBlockDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 8634F44A155EA9DF00FB2D82 /* ASSimpleBlockDispatcher.m */; };
+		8634F454155EAA8F00FB2D82 /* ASBlockDispatcherSpecs-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8634F451155EAA8F00FB2D82 /* ASBlockDispatcherSpecs-Info.plist */; };
+		8634F455155EAA8F00FB2D82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8634F453155EAA8F00FB2D82 /* main.m */; };
+		8634F455155EAA8F00FB2D84 /* ASCurrentQueueBlockDispatcherSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8634F455155EAA8F00FB2D83 /* ASCurrentQueueBlockDispatcherSpec.m */; };
+		8634F455155EAA8F00FB2D86 /* ASGlobalQueueDispatcherSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8634F455155EAA8F00FB2D85 /* ASGlobalQueueDispatcherSpec.m */; };
+		8634F455155EAA8F00FB2D88 /* ASMainQueueBlockDispatcherSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8634F455155EAA8F00FB2D87 /* ASMainQueueBlockDispatcherSpec.m */; };
+		8634F455155EAA8F00FB2D8A /* ASSimpleBlockDispatcherSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8634F455155EAA8F00FB2D89 /* ASSimpleBlockDispatcherSpec.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8634F3D0155EA79700FB2D82 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8634F3D2155EA79700FB2D82 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8634F3D4155EA79700FB2D82 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8634F40B155EA8F700FB2D82 /* ASBlockDispatcherSpecs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASBlockDispatcherSpecs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8634F420155EA97000FB2D82 /* Cedar-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "Cedar-iOS.framework"; sourceTree = "<group>"; };
+		8634F422155EA97000FB2D82 /* Expecta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Expecta.h; sourceTree = "<group>"; };
+		8634F423155EA97000FB2D82 /* ExpectaSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpectaSupport.h; sourceTree = "<group>"; };
+		8634F424155EA97000FB2D82 /* EXPExpect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXPExpect.h; sourceTree = "<group>"; };
+		8634F425155EA97000FB2D82 /* EXPMatcherHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXPMatcherHelpers.h; sourceTree = "<group>"; };
+		8634F426155EA97000FB2D82 /* EXPMatchers+toBeFalsy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+toBeFalsy.h"; sourceTree = "<group>"; };
+		8634F427155EA97000FB2D82 /* EXPMatchers+toBeGreaterThan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+toBeGreaterThan.h"; sourceTree = "<group>"; };
+		8634F428155EA97000FB2D82 /* EXPMatchers+toBeGreaterThanOrEqualTo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+toBeGreaterThanOrEqualTo.h"; sourceTree = "<group>"; };
+		8634F429155EA97000FB2D82 /* EXPMatchers+toBeIdenticalTo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+toBeIdenticalTo.h"; sourceTree = "<group>"; };
+		8634F42A155EA97000FB2D82 /* EXPMatchers+toBeInstanceOf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+toBeInstanceOf.h"; sourceTree = "<group>"; };
+		8634F42B155EA97000FB2D82 /* EXPMatchers+toBeInTheRangeOf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+toBeInTheRangeOf.h"; sourceTree = "<group>"; };
+		8634F42C155EA97000FB2D82 /* EXPMatchers+toBeKindOf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+toBeKindOf.h"; sourceTree = "<group>"; };
+		8634F42D155EA97000FB2D82 /* EXPMatchers+toBeLessThan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+toBeLessThan.h"; sourceTree = "<group>"; };
+		8634F42E155EA97000FB2D82 /* EXPMatchers+toBeLessThanOrEqualTo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+toBeLessThanOrEqualTo.h"; sourceTree = "<group>"; };
+		8634F42F155EA97000FB2D82 /* EXPMatchers+toBeNil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+toBeNil.h"; sourceTree = "<group>"; };
+		8634F430155EA97000FB2D82 /* EXPMatchers+toBeSubclassOf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+toBeSubclassOf.h"; sourceTree = "<group>"; };
+		8634F431155EA97000FB2D82 /* EXPMatchers+toBeTruthy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+toBeTruthy.h"; sourceTree = "<group>"; };
+		8634F432155EA97000FB2D82 /* EXPMatchers+toContain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+toContain.h"; sourceTree = "<group>"; };
+		8634F433155EA97000FB2D82 /* EXPMatchers+toEqual.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+toEqual.h"; sourceTree = "<group>"; };
+		8634F434155EA97000FB2D82 /* EXPMatchers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXPMatchers.h; sourceTree = "<group>"; };
+		8634F435155EA97000FB2D82 /* EXPUnsupportedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXPUnsupportedObject.h; sourceTree = "<group>"; };
+		8634F436155EA97000FB2D82 /* libExpecta-ios-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libExpecta-ios-universal.a"; sourceTree = "<group>"; };
+		8634F437155EA97000FB2D82 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		8634F438155EA97000FB2D82 /* NSObject+Expecta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Expecta.h"; sourceTree = "<group>"; };
+		8634F439155EA97000FB2D82 /* NSValue+Expecta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValue+Expecta.h"; sourceTree = "<group>"; };
+		8634F43A155EA97000FB2D82 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		8634F43B155EA97000FB2D82 /* OCMock-iPhone.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "OCMock-iPhone.framework"; sourceTree = "<group>"; };
+		8634F442155EA9DF00FB2D82 /* ASBlockDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASBlockDispatcher.h; sourceTree = "<group>"; };
+		8634F443155EA9DF00FB2D82 /* ASCurrentQueueBlockDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCurrentQueueBlockDispatcher.h; sourceTree = "<group>"; };
+		8634F444155EA9DF00FB2D82 /* ASCurrentQueueBlockDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCurrentQueueBlockDispatcher.m; sourceTree = "<group>"; };
+		8634F445155EA9DF00FB2D82 /* ASGlobalQueueDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASGlobalQueueDispatcher.h; sourceTree = "<group>"; };
+		8634F446155EA9DF00FB2D82 /* ASGlobalQueueDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASGlobalQueueDispatcher.m; sourceTree = "<group>"; };
+		8634F447155EA9DF00FB2D82 /* ASMainQueueBlockDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASMainQueueBlockDispatcher.h; sourceTree = "<group>"; };
+		8634F448155EA9DF00FB2D82 /* ASMainQueueBlockDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASMainQueueBlockDispatcher.m; sourceTree = "<group>"; };
+		8634F449155EA9DF00FB2D82 /* ASSimpleBlockDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSimpleBlockDispatcher.h; sourceTree = "<group>"; };
+		8634F44A155EA9DF00FB2D82 /* ASSimpleBlockDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSimpleBlockDispatcher.m; sourceTree = "<group>"; };
+		8634F451155EAA8F00FB2D82 /* ASBlockDispatcherSpecs-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ASBlockDispatcherSpecs-Info.plist"; sourceTree = "<group>"; };
+		8634F452155EAA8F00FB2D82 /* ASBlockDispatcherSpecs-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ASBlockDispatcherSpecs-Prefix.pch"; sourceTree = "<group>"; };
+		8634F453155EAA8F00FB2D82 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8634F455155EAA8F00FB2D83 /* ASCurrentQueueBlockDispatcherSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCurrentQueueBlockDispatcherSpec.m; sourceTree = "<group>"; };
+		8634F455155EAA8F00FB2D85 /* ASGlobalQueueDispatcherSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASGlobalQueueDispatcherSpec.m; sourceTree = "<group>"; };
+		8634F455155EAA8F00FB2D87 /* ASMainQueueBlockDispatcherSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASMainQueueBlockDispatcherSpec.m; sourceTree = "<group>"; };
+		8634F455155EAA8F00FB2D89 /* ASSimpleBlockDispatcherSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSimpleBlockDispatcherSpec.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8634F408155EA8F700FB2D82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8634F40D155EA8F700FB2D82 /* UIKit.framework in Frameworks */,
+				8634F40E155EA8F700FB2D82 /* Foundation.framework in Frameworks */,
+				8634F40F155EA8F700FB2D82 /* CoreGraphics.framework in Frameworks */,
+				8634F43C155EA97000FB2D82 /* Cedar-iOS.framework in Frameworks */,
+				8634F43D155EA97000FB2D82 /* libExpecta-ios-universal.a in Frameworks */,
+				8634F440155EA97000FB2D82 /* OCMock-iPhone.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8634F3C1155EA79500FB2D82 = {
+			isa = PBXGroup;
+			children = (
+				8634F441155EA99100FB2D82 /* ASBlockDispatcher */,
+				8634F410155EA8F700FB2D82 /* ASBlockDispatcherSpecs */,
+				8634F41F155EA90400FB2D82 /* External */,
+				8634F3CF155EA79700FB2D82 /* Frameworks */,
+				8634F3CD155EA79700FB2D82 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8634F3CD155EA79700FB2D82 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8634F40B155EA8F700FB2D82 /* ASBlockDispatcherSpecs.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8634F3CF155EA79700FB2D82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8634F3D0155EA79700FB2D82 /* UIKit.framework */,
+				8634F3D2155EA79700FB2D82 /* Foundation.framework */,
+				8634F3D4155EA79700FB2D82 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8634F410155EA8F700FB2D82 /* ASBlockDispatcherSpecs */ = {
+			isa = PBXGroup;
+			children = (
+				8634F44F155EAA5800FB2D82 /* ASBlockDispatcher */,
+				8634F450155EAA8F00FB2D82 /* Supporting Files */,
+			);
+			path = ASBlockDispatcherSpecs;
+			sourceTree = "<group>";
+		};
+		8634F41F155EA90400FB2D82 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				8634F420155EA97000FB2D82 /* Cedar-iOS.framework */,
+				8634F421155EA97000FB2D82 /* Expecta */,
+				8634F43B155EA97000FB2D82 /* OCMock-iPhone.framework */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		8634F421155EA97000FB2D82 /* Expecta */ = {
+			isa = PBXGroup;
+			children = (
+				8634F422155EA97000FB2D82 /* Expecta.h */,
+				8634F423155EA97000FB2D82 /* ExpectaSupport.h */,
+				8634F424155EA97000FB2D82 /* EXPExpect.h */,
+				8634F425155EA97000FB2D82 /* EXPMatcherHelpers.h */,
+				8634F426155EA97000FB2D82 /* EXPMatchers+toBeFalsy.h */,
+				8634F427155EA97000FB2D82 /* EXPMatchers+toBeGreaterThan.h */,
+				8634F428155EA97000FB2D82 /* EXPMatchers+toBeGreaterThanOrEqualTo.h */,
+				8634F429155EA97000FB2D82 /* EXPMatchers+toBeIdenticalTo.h */,
+				8634F42A155EA97000FB2D82 /* EXPMatchers+toBeInstanceOf.h */,
+				8634F42B155EA97000FB2D82 /* EXPMatchers+toBeInTheRangeOf.h */,
+				8634F42C155EA97000FB2D82 /* EXPMatchers+toBeKindOf.h */,
+				8634F42D155EA97000FB2D82 /* EXPMatchers+toBeLessThan.h */,
+				8634F42E155EA97000FB2D82 /* EXPMatchers+toBeLessThanOrEqualTo.h */,
+				8634F42F155EA97000FB2D82 /* EXPMatchers+toBeNil.h */,
+				8634F430155EA97000FB2D82 /* EXPMatchers+toBeSubclassOf.h */,
+				8634F431155EA97000FB2D82 /* EXPMatchers+toBeTruthy.h */,
+				8634F432155EA97000FB2D82 /* EXPMatchers+toContain.h */,
+				8634F433155EA97000FB2D82 /* EXPMatchers+toEqual.h */,
+				8634F434155EA97000FB2D82 /* EXPMatchers.h */,
+				8634F435155EA97000FB2D82 /* EXPUnsupportedObject.h */,
+				8634F436155EA97000FB2D82 /* libExpecta-ios-universal.a */,
+				8634F437155EA97000FB2D82 /* LICENSE */,
+				8634F438155EA97000FB2D82 /* NSObject+Expecta.h */,
+				8634F439155EA97000FB2D82 /* NSValue+Expecta.h */,
+				8634F43A155EA97000FB2D82 /* README.md */,
+			);
+			path = Expecta;
+			sourceTree = "<group>";
+		};
+		8634F441155EA99100FB2D82 /* ASBlockDispatcher */ = {
+			isa = PBXGroup;
+			children = (
+				8634F442155EA9DF00FB2D82 /* ASBlockDispatcher.h */,
+				8634F443155EA9DF00FB2D82 /* ASCurrentQueueBlockDispatcher.h */,
+				8634F444155EA9DF00FB2D82 /* ASCurrentQueueBlockDispatcher.m */,
+				8634F445155EA9DF00FB2D82 /* ASGlobalQueueDispatcher.h */,
+				8634F446155EA9DF00FB2D82 /* ASGlobalQueueDispatcher.m */,
+				8634F447155EA9DF00FB2D82 /* ASMainQueueBlockDispatcher.h */,
+				8634F448155EA9DF00FB2D82 /* ASMainQueueBlockDispatcher.m */,
+				8634F449155EA9DF00FB2D82 /* ASSimpleBlockDispatcher.h */,
+				8634F44A155EA9DF00FB2D82 /* ASSimpleBlockDispatcher.m */,
+			);
+			path = ASBlockDispatcher;
+			sourceTree = "<group>";
+		};
+		8634F44F155EAA5800FB2D82 /* ASBlockDispatcher */ = {
+			isa = PBXGroup;
+			children = (
+				8634F455155EAA8F00FB2D89 /* ASSimpleBlockDispatcherSpec.m */,
+				8634F455155EAA8F00FB2D87 /* ASMainQueueBlockDispatcherSpec.m */,
+				8634F455155EAA8F00FB2D85 /* ASGlobalQueueDispatcherSpec.m */,
+				8634F455155EAA8F00FB2D83 /* ASCurrentQueueBlockDispatcherSpec.m */,
+			);
+			path = ASBlockDispatcher;
+			sourceTree = "<group>";
+		};
+		8634F450155EAA8F00FB2D82 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8634F451155EAA8F00FB2D82 /* ASBlockDispatcherSpecs-Info.plist */,
+				8634F452155EAA8F00FB2D82 /* ASBlockDispatcherSpecs-Prefix.pch */,
+				8634F453155EAA8F00FB2D82 /* main.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8634F40A155EA8F700FB2D82 /* ASBlockDispatcherSpecs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8634F41C155EA8F700FB2D82 /* Build configuration list for PBXNativeTarget "ASBlockDispatcherSpecs" */;
+			buildPhases = (
+				8634F407155EA8F700FB2D82 /* Sources */,
+				8634F408155EA8F700FB2D82 /* Frameworks */,
+				8634F409155EA8F700FB2D82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ASBlockDispatcherSpecs;
+			productName = ASBlockDispatcherSpecs;
+			productReference = 8634F40B155EA8F700FB2D82 /* ASBlockDispatcherSpecs.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8634F3C3155EA79500FB2D82 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AS;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 8634F3C6155EA79500FB2D82 /* Build configuration list for PBXProject "ASBlockDispatcher" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8634F3C1155EA79500FB2D82;
+			productRefGroup = 8634F3CD155EA79700FB2D82 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8634F40A155EA8F700FB2D82 /* ASBlockDispatcherSpecs */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8634F409155EA8F700FB2D82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8634F43E155EA97000FB2D82 /* LICENSE in Resources */,
+				8634F43F155EA97000FB2D82 /* README.md in Resources */,
+				8634F454155EAA8F00FB2D82 /* ASBlockDispatcherSpecs-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8634F407155EA8F700FB2D82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8634F44B155EA9DF00FB2D82 /* ASCurrentQueueBlockDispatcher.m in Sources */,
+				8634F44C155EA9DF00FB2D82 /* ASGlobalQueueDispatcher.m in Sources */,
+				8634F44D155EA9DF00FB2D82 /* ASMainQueueBlockDispatcher.m in Sources */,
+				8634F44E155EA9DF00FB2D82 /* ASSimpleBlockDispatcher.m in Sources */,
+				8634F455155EAA8F00FB2D82 /* main.m in Sources */,
+				8634F455155EAA8F00FB2D84 /* ASCurrentQueueBlockDispatcherSpec.m in Sources */,
+				8634F455155EAA8F00FB2D86 /* ASGlobalQueueDispatcherSpec.m in Sources */,
+				8634F455155EAA8F00FB2D88 /* ASMainQueueBlockDispatcherSpec.m in Sources */,
+				8634F455155EAA8F00FB2D8A /* ASSimpleBlockDispatcherSpec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8634F3E2155EA79B00FB2D82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8634F3E3155EA79B00FB2D82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8634F41D155EA8F700FB2D82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/External\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ASBlockDispatcherSpecs/Supporting Files/ASBlockDispatcherSpecs-Prefix.pch";
+				INFOPLIST_FILE = "ASBlockDispatcherSpecs/Supporting Files/ASBlockDispatcherSpecs-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/External/Expecta\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lstdc++",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8634F41E155EA8F700FB2D82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/External\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ASBlockDispatcherSpecs/Supporting Files/ASBlockDispatcherSpecs-Prefix.pch";
+				INFOPLIST_FILE = "ASBlockDispatcherSpecs/Supporting Files/ASBlockDispatcherSpecs-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/External/Expecta\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lstdc++",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8634F3C6155EA79500FB2D82 /* Build configuration list for PBXProject "ASBlockDispatcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8634F3E2155EA79B00FB2D82 /* Debug */,
+				8634F3E3155EA79B00FB2D82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8634F41C155EA8F700FB2D82 /* Build configuration list for PBXNativeTarget "ASBlockDispatcherSpecs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8634F41D155EA8F700FB2D82 /* Debug */,
+				8634F41E155EA8F700FB2D82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8634F3C3155EA79500FB2D82 /* Project object */;
+}
