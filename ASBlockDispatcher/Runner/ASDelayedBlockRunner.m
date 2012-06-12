@@ -21,7 +21,7 @@
 - (void) runBlock:(void(^)(void))block onQueue:(dispatch_queue_t)queue
 {
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t) (self.delay * NSEC_PER_SEC));
-    dispatch_after(popTime, dispatch_get_main_queue(), block);
+    dispatch_after(popTime, queue, block);
 }
 
 @end

@@ -41,7 +41,7 @@
 
 #pragma mark - ASBlockRunner
 
-- (void)runBlock:(void (^)())block onQueue:(dispatch_queue_t)queue {
+- (void)runBlock:(void (^)(void))block onQueue:(dispatch_queue_t)queue {
     self.block = block;
     self.queue = queue;
 }
