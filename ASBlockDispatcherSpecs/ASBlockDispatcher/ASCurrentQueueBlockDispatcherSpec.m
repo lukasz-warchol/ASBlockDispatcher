@@ -4,6 +4,7 @@
 #import "Expecta.h"
 
 #import "ASCurrentQueueBlockDispatcher.h"
+#import "FakeBlockRunner.h"
 
 SPEC_BEGIN(ASCurrentQueueBlockDispatcherSpec)
 
@@ -14,10 +15,10 @@ describe(@"ASCurrentQueueBlockDispatcher", ^{
         dispatcher = [ASCurrentQueueBlockDispatcher dispatcher];
     });
 
-    describe(@"when dispatching block synchronously", ^{
+    describe(@"when dispatching block", ^{
         it(@"should run immediately", ^void() {
             __block BOOL wasRun = NO;
-            [dispatcher dispatchSyncBlock:^void() {
+            [dispatcher dispatchBlock:^void() {
                 wasRun = YES;
             }];
 
@@ -25,29 +26,23 @@ describe(@"ASCurrentQueueBlockDispatcher", ^{
         });
 
         it(@"should not crash when nil block passed", ^{
-            [dispatcher dispatchSyncBlock:nil];
+            [dispatcher dispatchBlock:nil];
 
             //should not crash
         });
-    });
 
-    describe(@"when dispatching block asynchronously", ^{
-        it(@"should run immediately", ^void() {
-            __block BOOL wasRun = NO;
-            [dispatcher dispatchAsyncBlock:^void() {
-                wasRun = YES;
-            }];
+        it(@"should use block runner", ^{
+            FakeBlockRunner* blockRunner = [FakeBlockRunner blockRunner];
+            dispatcher.blockRunner = blockRunner;
 
-            expect(wasRun).Not.toBeTruthy();
-            //not true because two queues re not synchronised and current queue does not wait for other one to return
-        });
+            void (^Block)() = ^void() {};
+            [dispatcher dispatchBlock:Block];
 
-        it(@"should not crash when nil block passed", ^{
-            [dispatcher dispatchAsyncBlock:nil];
-
-            //should not crash
+            expect(blockRunner.block == Block).toBeTruthy();
+            expect(blockRunner.queue == dispatch_get_current_queue()).toBeTruthy();
         });
     });
+
 });
 
 SPEC_END

@@ -2,17 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53908cd8-1db6-4e39-b1b7-88ef5a9dd1cc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/ASBlockDispatcher.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/xcode.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASBlockDispatcherSpecs/ASBlockDispatcher/ASCurrentQueueBlockDispatcherSpec.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASBlockDispatcherSpecs/ASBlockDispatcher/ASGlobalQueueDispatcherSpec.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASBlockDispatcherSpecs/ASBlockDispatcher/ASMainQueueBlockDispatcherSpec.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASBlockDispatcherSpecs/ASBlockDispatcher/ASSimpleBlockDispatcherSpec.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASBlockDispatcher/Runner/ASAsyncBlockRunner.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASBlockDispatcher/Runner/ASAsyncBlockRunner.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASBlockDispatcher/Runner/ASBlockRunner.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASBlockDispatcher/Runner/ASDelayedBlockRunner.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASBlockDispatcher/Runner/ASDelayedBlockRunner.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASBlockDispatcher/Runner/ASSyncBlockRunner.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASBlockDispatcher/Runner/ASSyncBlockRunner.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASBlockDispatcherSpecs/Helpers/FakeBlockRunner.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASBlockDispatcherSpecs/Helpers/FakeBlockRunner.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ASBlockDispatcher.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/ASBlockDispatcher.xcodeproj/project.pbxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ASBlockDispatcher/ASBlockDispatcher.h" afterPath="$PROJECT_DIR$/ASBlockDispatcher/ASBlockDispatcher.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ASBlockDispatcher/ASCurrentQueueBlockDispatcher.h" afterPath="$PROJECT_DIR$/ASBlockDispatcher/ASCurrentQueueBlockDispatcher.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ASBlockDispatcher/ASCurrentQueueBlockDispatcher.m" afterPath="$PROJECT_DIR$/ASBlockDispatcher/ASCurrentQueueBlockDispatcher.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ASBlockDispatcher/ASSimpleBlockDispatcher.h" afterPath="$PROJECT_DIR$/ASBlockDispatcher/ASSimpleBlockDispatcher.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ASBlockDispatcher/ASSimpleBlockDispatcher.m" afterPath="$PROJECT_DIR$/ASBlockDispatcher/ASSimpleBlockDispatcher.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ASBlockDispatcherSpecs/ASBlockDispatcher/ASCurrentQueueBlockDispatcherSpec.m" afterPath="$PROJECT_DIR$/ASBlockDispatcherSpecs/ASBlockDispatcher/ASCurrentQueueBlockDispatcherSpec.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ASBlockDispatcherSpecs/ASBlockDispatcher/ASSimpleBlockDispatcherSpec.m" afterPath="$PROJECT_DIR$/ASBlockDispatcherSpecs/ASBlockDispatcher/ASSimpleBlockDispatcherSpec.m" />
     </list>
     <ignored path="ASBlockDispatcher.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,7 +40,82 @@
     <favorites_list name="ASBlockDispatcher" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="ASBlockDispatcher.h" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ASBlockDispatcher/ASBlockDispatcher.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="0" selection-start="83" selection-end="83" vertical-scroll-proportion="0.14072847">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ASCurrentQueueBlockDispatcher.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ASBlockDispatcher/ASCurrentQueueBlockDispatcher.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="33" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ASSimpleBlockDispatcherSpec.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ASBlockDispatcherSpecs/ASBlockDispatcher/ASSimpleBlockDispatcherSpec.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="64" column="8" selection-start="2005" selection-end="2461" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ASBlockRunner.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ASBlockDispatcher/Runner/ASBlockRunner.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="23" selection-start="60" selection-end="73" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ASGlobalQueueDispatcherSpec.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ASBlockDispatcherSpecs/ASBlockDispatcher/ASGlobalQueueDispatcherSpec.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ASCurrentQueueBlockDispatcherSpec.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ASBlockDispatcherSpecs/ASBlockDispatcher/ASCurrentQueueBlockDispatcherSpec.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="16" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#56#75#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ASSyncBlockRunner.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ASBlockDispatcher/Runner/ASSyncBlockRunner.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="10" selection-start="148" selection-end="148" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ASDelayedBlockRunner.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ASBlockDispatcher/Runner/ASDelayedBlockRunner.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="53" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -46,19 +128,29 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/ASBlockDispatcher/Runner/ASSyncBlockRunner.h" />
+        <option value="$PROJECT_DIR$/ASBlockDispatcher/Runner/ASAsyncBlockRunner.m" />
+        <option value="$PROJECT_DIR$/ASBlockDispatcher/Runner/ASAsyncBlockRunner.h" />
+        <option value="$PROJECT_DIR$/ASBlockDispatcher/ASSyncBlockDispatcher.h" />
+        <option value="$PROJECT_DIR$/ASBlockDispatcher/ASSyncBlockDispatcher.m" />
+        <option value="$PROJECT_DIR$/ASBlockDispatcher/Runner/ASDelayedBlockRunner.m" />
+        <option value="$PROJECT_DIR$/ASBlockDispatcher/Runner/ASDelayedBlockRunner.h" />
         <option value="$PROJECT_DIR$/ASBlockDispatcher/ASCurrentQueueBlockDispatcher.m" />
+        <option value="$PROJECT_DIR$/ASBlockDispatcher/ASBlockDispatcher.h" />
+        <option value="$PROJECT_DIR$/ASBlockDispatcher/ASCurrentQueueBlockDispatcher.h" />
+        <option value="$PROJECT_DIR$/ASBlockDispatcher/ASSimpleBlockDispatcher.h" />
         <option value="$PROJECT_DIR$/ASBlockDispatcher/ASSimpleBlockDispatcher.m" />
-        <option value="$PROJECT_DIR$/ASBlockDispatcherSpecs/ASBlockDispatcher/ASCurrentQueueBlockDispatcherSpec.m" />
+        <option value="$PROJECT_DIR$/ASBlockDispatcherSpecs/Helpers/FakeBlockRunner.h" />
+        <option value="$PROJECT_DIR$/ASBlockDispatcherSpecs/Helpers/FakeBlockRunner.m" />
         <option value="$PROJECT_DIR$/ASBlockDispatcherSpecs/ASBlockDispatcher/ASSimpleBlockDispatcherSpec.m" />
-        <option value="$PROJECT_DIR$/ASBlockDispatcherSpecs/ASBlockDispatcher/ASMainQueueBlockDispatcherSpec.m" />
-        <option value="$PROJECT_DIR$/ASBlockDispatcherSpecs/ASBlockDispatcher/ASGlobalQueueDispatcherSpec.m" />
+        <option value="$PROJECT_DIR$/ASBlockDispatcherSpecs/ASBlockDispatcher/ASCurrentQueueBlockDispatcherSpec.m" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1276" />
-    <option name="height" value="778" />
+    <option name="width" value="1916" />
+    <option name="height" value="1058" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -136,6 +228,24 @@
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Helpers" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ASBlockDispatcher" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ASBlockDispatcherSpecs" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="ASBlockDispatcher" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
             </PATH_ELEMENT>
@@ -151,6 +261,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ASBlockDispatcher" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ASBlockDispatcher" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ASBlockDispatcher" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Runner" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -176,9 +304,7 @@
       </method>
     </configuration>
     <configuration default="false" name="ASBlockDispatcherSpecs" type="AppleRunConfiguration" factoryName="Application" SCHEME_NAME="ASBlockDispatcherSpecs" PROJECT_NAME="ASBlockDispatcher" TARGET_NAME="ASBlockDispatcherSpecs" CONFIG_NAME="Debug" DESTINATION_ID="iphonesimulator_5.1_1" RUN_TARGET_PROJECT_NAME="ASBlockDispatcher" RUN_TARGET_NAME="ASBlockDispatcherSpecs" DEBUGGER="LLDB" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
-      <envs>
-        <env name="CEDAR_HEADLESS_SPECS" value="0" />
-      </envs>
+      <envs />
       <RunnerSettings RunnerId="AppRunner" />
       <ConfigurationWrapper RunnerId="AppRunner" />
       <method>
@@ -199,18 +325,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1276" height="778" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="22" width="1916" height="1058" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32870865" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.67275494" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32910722" sideWeight="0.67342585" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32724506" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32657418" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -255,7 +381,9 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
     <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
     <option name="LAST_COMMIT_MESSAGE" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
@@ -274,95 +402,126 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ASBlockDispatcher/ASCurrentQueueBlockDispatcher.h">
+    <entry file="file://$PROJECT_DIR$/ASBlockDispatcher/Runner/ASSyncBlockRunner.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="40" selection-start="115" selection-end="144" vertical-scroll-proportion="0.0" />
+        <state line="10" column="0" selection-start="167" selection-end="186" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#50#83#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ASBlockDispatcher/Runner/ASDelayedBlockRunner.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ASBlockDispatcher/ASCurrentQueueBlockDispatcher.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="41" selection-start="44" selection-end="44" vertical-scroll-proportion="0.042394016">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ASBlockDispatcherSpecs/ASBlockDispatcher/ASCurrentQueueBlockDispatcherSpec.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="23" selection-start="1127" selection-end="1127" vertical-scroll-proportion="0.28109452">
+        <state line="29" column="0" selection-start="522" selection-end="522" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#56#75#0" expanded="true" />
+            <element signature="e#91#120#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ASBlockDispatcherSpecs/ASBlockDispatcher/ASSimpleBlockDispatcherSpec.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="0" selection-start="2538" selection-end="2538" vertical-scroll-proportion="0.6890547">
-          <folding>
-            <element signature="e#56#75#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ASBlockDispatcher/ASSimpleBlockDispatcher.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="9" selection-start="901" selection-end="901" vertical-scroll-proportion="0.6044776">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ASBlockDispatcher/ASSimpleBlockDispatcher.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="169" selection-end="169" vertical-scroll-proportion="0.28674698">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ASBlockDispatcher/ASMainQueueBlockDispatcher.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="4" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ASBlockDispatcher/ASMainQueueBlockDispatcher.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="49" selection-start="282" selection-end="308" vertical-scroll-proportion="0.0">
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ASBlockDispatcherSpecs/ASBlockDispatcher/ASMainQueueBlockDispatcherSpec.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="8" selection-start="411" selection-end="561" vertical-scroll-proportion="0.38059703">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/usr/include/dispatch/queue.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="391" column="13" selection-start="13074" selection-end="13074" vertical-scroll-proportion="0.33333334">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ASBlockDispatcherSpecs/ASBlockDispatcher/ASGlobalQueueDispatcherSpec.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="3" selection-start="1773" selection-end="1773" vertical-scroll-proportion="1.761194">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ASBlockDispatcher/ASGlobalQueueDispatcher.m">
+    <entry file="file://$PROJECT_DIR$/ASBlockDispatcher/ASCurrentQueueBlockDispatcher.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="47" selection-start="305" selection-end="305" vertical-scroll-proportion="0.61445785">
+        <state line="10" column="33" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ASBlockDispatcher/ASGlobalQueueDispatcher.h">
+    <entry file="file://$PROJECT_DIR$/ASBlockDispatcherSpecs/Helpers/FakeBlockRunner.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="7" selection-start="312" selection-end="312" vertical-scroll-proportion="0.49156627">
+        <state line="14" column="0" selection-start="280" selection-end="280" vertical-scroll-proportion="0.39403972">
+          <folding>
+            <element signature="e#50#83#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ASBlockDispatcher/ASSimpleBlockDispatcher.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="230" selection-end="481" vertical-scroll-proportion="0.33774835">
+          <folding>
+            <element signature="e#49#84#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ASBlockDispatcher/ASSimpleBlockDispatcher.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="41" selection-start="236" selection-end="236" vertical-scroll-proportion="0.28145695">
+          <folding>
+            <element signature="e#49#72#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ASBlockDispatcher/Runner/ASBlockRunner.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="23" selection-start="60" selection-end="73" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ASBlockDispatcherSpecs/Helpers/FakeBlockRunner.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="1" selection-start="736" selection-end="736" vertical-scroll-proportion="0.7466887">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ASBlockDispatcherSpecs/ASBlockDispatcher/ASSimpleBlockDispatcherSpec.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="8" selection-start="2005" selection-end="2461" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ASBlockDispatcherSpecs/ASBlockDispatcher/ASCurrentQueueBlockDispatcherSpec.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="16" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#56#75#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ASBlockDispatcher/Runner/ASSyncBlockRunner.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="10" selection-start="148" selection-end="148" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ASBlockDispatcher/Runner/ASDelayedBlockRunner.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="53" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ASBlockDispatcher/ASBlockDispatcher.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="83" selection-end="83" vertical-scroll-proportion="0.14072847">
           <folding />
         </state>
       </provider>

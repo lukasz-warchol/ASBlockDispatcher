@@ -5,7 +5,10 @@
 #import <UIKit/UIKit.h>
 #import "ASBlockDispatcher.h"
 
+@protocol ASBlockRunner;
+
 @interface ASCurrentQueueBlockDispatcher : NSObject<ASBlockDispatcher>
+@property(nonatomic, retain) id<ASBlockRunner> blockRunner;
 
 + (id) dispatcher;
 

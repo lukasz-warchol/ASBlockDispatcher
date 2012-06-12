@@ -25,6 +25,10 @@
 		8634F455155EAA8F00FB2D86 /* ASGlobalQueueDispatcherSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8634F455155EAA8F00FB2D85 /* ASGlobalQueueDispatcherSpec.m */; };
 		8634F455155EAA8F00FB2D88 /* ASMainQueueBlockDispatcherSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8634F455155EAA8F00FB2D87 /* ASMainQueueBlockDispatcherSpec.m */; };
 		8634F455155EAA8F00FB2D8A /* ASSimpleBlockDispatcherSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8634F455155EAA8F00FB2D89 /* ASSimpleBlockDispatcherSpec.m */; };
+		8634F455155EAA8F00FB2D8D /* ASSyncBlockRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = 8634F455155EAA8F00FB2D8C /* ASSyncBlockRunner.m */; };
+		8634F455155EAA8F00FB2D91 /* ASAsyncBlockRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = 8634F455155EAA8F00FB2D90 /* ASAsyncBlockRunner.m */; };
+		8634F455155EAA8F00FB2D94 /* ASDelayedBlockRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = 8634F455155EAA8F00FB2D93 /* ASDelayedBlockRunner.m */; };
+		8634F455155EAA8F00FB2D98 /* FakeBlockRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = 8634F455155EAA8F00FB2D97 /* FakeBlockRunner.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +79,15 @@
 		8634F455155EAA8F00FB2D85 /* ASGlobalQueueDispatcherSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASGlobalQueueDispatcherSpec.m; sourceTree = "<group>"; };
 		8634F455155EAA8F00FB2D87 /* ASMainQueueBlockDispatcherSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASMainQueueBlockDispatcherSpec.m; sourceTree = "<group>"; };
 		8634F455155EAA8F00FB2D89 /* ASSimpleBlockDispatcherSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSimpleBlockDispatcherSpec.m; sourceTree = "<group>"; };
+		8634F455155EAA8F00FB2D8C /* ASSyncBlockRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSyncBlockRunner.m; sourceTree = "<group>"; };
+		8634F455155EAA8F00FB2D8E /* ASSyncBlockRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSyncBlockRunner.h; sourceTree = "<group>"; };
+		8634F455155EAA8F00FB2D8F /* ASBlockRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASBlockRunner.h; sourceTree = "<group>"; };
+		8634F455155EAA8F00FB2D90 /* ASAsyncBlockRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASAsyncBlockRunner.m; sourceTree = "<group>"; };
+		8634F455155EAA8F00FB2D92 /* ASAsyncBlockRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASAsyncBlockRunner.h; sourceTree = "<group>"; };
+		8634F455155EAA8F00FB2D93 /* ASDelayedBlockRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASDelayedBlockRunner.m; sourceTree = "<group>"; };
+		8634F455155EAA8F00FB2D95 /* ASDelayedBlockRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASDelayedBlockRunner.h; sourceTree = "<group>"; };
+		8634F455155EAA8F00FB2D97 /* FakeBlockRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeBlockRunner.m; sourceTree = "<group>"; };
+		8634F455155EAA8F00FB2D99 /* FakeBlockRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeBlockRunner.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +141,7 @@
 			children = (
 				8634F44F155EAA5800FB2D82 /* ASBlockDispatcher */,
 				8634F450155EAA8F00FB2D82 /* Supporting Files */,
+				8634F455155EAA8F00FB2D96 /* Helpers */,
 			);
 			path = ASBlockDispatcherSpecs;
 			sourceTree = "<group>";
@@ -186,6 +200,7 @@
 				8634F448155EA9DF00FB2D82 /* ASMainQueueBlockDispatcher.m */,
 				8634F449155EA9DF00FB2D82 /* ASSimpleBlockDispatcher.h */,
 				8634F44A155EA9DF00FB2D82 /* ASSimpleBlockDispatcher.m */,
+				8634F455155EAA8F00FB2D8B /* Runner */,
 			);
 			path = ASBlockDispatcher;
 			sourceTree = "<group>";
@@ -209,6 +224,29 @@
 				8634F453155EAA8F00FB2D82 /* main.m */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8634F455155EAA8F00FB2D8B /* Runner */ = {
+			isa = PBXGroup;
+			children = (
+				8634F455155EAA8F00FB2D95 /* ASDelayedBlockRunner.h */,
+				8634F455155EAA8F00FB2D93 /* ASDelayedBlockRunner.m */,
+				8634F455155EAA8F00FB2D92 /* ASAsyncBlockRunner.h */,
+				8634F455155EAA8F00FB2D90 /* ASAsyncBlockRunner.m */,
+				8634F455155EAA8F00FB2D8F /* ASBlockRunner.h */,
+				8634F455155EAA8F00FB2D8E /* ASSyncBlockRunner.h */,
+				8634F455155EAA8F00FB2D8C /* ASSyncBlockRunner.m */,
+			);
+			path = Runner;
+			sourceTree = "<group>";
+		};
+		8634F455155EAA8F00FB2D96 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8634F455155EAA8F00FB2D99 /* FakeBlockRunner.h */,
+				8634F455155EAA8F00FB2D97 /* FakeBlockRunner.m */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +322,10 @@
 				8634F455155EAA8F00FB2D86 /* ASGlobalQueueDispatcherSpec.m in Sources */,
 				8634F455155EAA8F00FB2D88 /* ASMainQueueBlockDispatcherSpec.m in Sources */,
 				8634F455155EAA8F00FB2D8A /* ASSimpleBlockDispatcherSpec.m in Sources */,
+				8634F455155EAA8F00FB2D8D /* ASSyncBlockRunner.m in Sources */,
+				8634F455155EAA8F00FB2D91 /* ASAsyncBlockRunner.m in Sources */,
+				8634F455155EAA8F00FB2D94 /* ASDelayedBlockRunner.m in Sources */,
+				8634F455155EAA8F00FB2D98 /* FakeBlockRunner.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

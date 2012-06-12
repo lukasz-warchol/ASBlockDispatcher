@@ -6,7 +6,6 @@
 
 @protocol ASBlockDispatcher <NSObject>
 
-- (void) dispatchSyncBlock:(void(^)(void))block;
-- (void) dispatchAsyncBlock:(void(^)(void))block;
+- (void) dispatchBlock:(void(^)(void))block;
 
 @end

@@ -3,10 +3,12 @@
 //
 
 #import "ASSimpleBlockDispatcher.h"
+#import "ASSyncBlockRunner.h"
 
-@implementation ASSimpleBlockDispatcher{
+@implementation ASSimpleBlockDispatcher {
     dispatch_queue_t _queue;
 }
+@synthesize blockRunner = _blockRunner;
 
 #pragma mark - Getters
 
@@ -29,31 +31,30 @@
 
 + (id) dispatcherWithQueue:(dispatch_queue_t)queue
 {
-    ASSimpleBlockDispatcher* dispatcher = [[[[self class] alloc] init] autorelease];
+    ASSimpleBlockDispatcher * dispatcher = [[[[self class] alloc] init] autorelease];
     dispatcher.queue = queue;
     return dispatcher;
 }
 
-#pragma mark - ASBlockDispatcher
-
-- (void) dispatchSyncBlock:(void(^)(void))block
-{
-    if (block) {
-        if (dispatch_get_current_queue() == self.queue) {
-            // When dispatching block synchronously on the same queue we can not use dispatch_sync()
-            // since it would wait for a queue to be in idle state, we would endup in a dead lock.
-            block();
-        }else {
-            dispatch_sync(self.queue, block);
-        }
+- (id)init {
+    self = [super init];
+    if (self) {
+        self.blockRunner = [ASSyncBlockRunner blockRunner];
     }
+    return self;
 }
 
-- (void) dispatchAsyncBlock:(void(^)(void))block
+- (void)dealloc {
+    [_blockRunner release];
+    self.queue = nil;
+    [super dealloc];
+}
+
+#pragma mark - ASBlockDispatcher
+
+- (void) dispatchBlock:(void(^)(void))block
 {
-    if (block) {
-        dispatch_async(self.queue, block);
-    }
+    [self.blockRunner runBlock:block onQueue:self.queue];
 }
 
 @end

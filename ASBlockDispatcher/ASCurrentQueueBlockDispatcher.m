@@ -3,27 +3,35 @@
 //
 
 #import "ASCurrentQueueBlockDispatcher.h"
+#import "ASSyncBlockRunner.h"
+#import "ASBlockRunner.h"
 
 @implementation ASCurrentQueueBlockDispatcher
+@synthesize blockRunner = _blockRunner;
 
 + (id) dispatcher
 {
     return [[[[self class] alloc] init] autorelease];
 }
 
+- (id)init {
+    self = [super init];
+    if (self) {
+        self.blockRunner = [ASSyncBlockRunner blockRunner];
+    }
+    return self;
+}
+
+- (void)dealloc {
+    [_blockRunner release];
+    [super dealloc];
+}
+
 #pragma mark - ASBlockDispatcher
 
-- (void) dispatchSyncBlock:(void(^)(void))block
+- (void) dispatchBlock:(void(^)(void))block
 {
-    if (block) {
-        block();
-    }
-}
-- (void) dispatchAsyncBlock:(void(^)(void))block
-{
-    if (block) {
-        dispatch_async(dispatch_get_current_queue(), block);
-    }
+    [self.blockRunner runBlock:block onQueue:dispatch_get_current_queue()];
 }
 
 @end
