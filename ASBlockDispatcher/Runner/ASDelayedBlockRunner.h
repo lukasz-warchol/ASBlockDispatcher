@@ -4,9 +4,10 @@
 
 
 #import <Foundation/Foundation.h>
+#import "ASBlockRunner.h"
 
 
-@interface ASDelayedBlockRunner : NSObject
+@interface ASDelayedBlockRunner : NSObject<ASBlockRunner>
 @property(nonatomic) NSTimeInterval delay;
 
 + (id) blockRunnerWithDelayTime:(NSTimeInterval)delay;
